@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><html xmlns="http://www.w3.org/1999/xhtml" lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8" /><meta name="description" content="The Pool Calculator helps you keep calculate your pool's chemical needs." /><meta name="Author" content="pSIFlow Technology Inc." /><meta name="Copyright" content="Copyright (c) 2010-2015 by pSIFlow Technology Inc." /><meta name="apple-itunes-app" content="app-id=412876581" />
+
+<link rel="help" href="chemistry.html" /><link rel="stylesheet" type="text/css" href="styles.css" media="all" />
+
+<title>My Pool Calculator</title>
+
+<!-- 
+<style type="text/css"> #banner {
+    width: 50%;
+    background-color: white;
+/*    height: 50px; */
+    position: fixed; 
+    top: 0;
+    display: none;
+        left: 25%; 
+    text-align: center;
+    line-height: 50px;
+    font-weight: bold;
+        margin-left: auto;
+        margin-right: auto;
+        
+        border-style: solid;
+        border-color: #4484dc;
+        border-width: 2px;
+        z-index: 100;
+}
+  </style>
+ -->
+  
+<!-- 
+<script async="" src="//www.google-analytics.com/analytics.js" type="text/javascript"></script>
+ -->
+<script type="text/javascript" src="poolcalc.js"></script>
+<!-- 
+<script type="text/javascript" src="jquery-1.11.0.min.js"></script>
+ -->
+ 
+<!-- 
+<script type="text/javascript">  var trackId = 'UA-12492022-9'; // thepoolcalculator.com;
+  switch(document.domain) {
+        case 'thepoolcalculator.com':
+                trackId = 'UA-12492022-2';
+        break;
+        case 'thespacalculator.com':
+                trackId = 'UA-12492022-11';
+        break;  
+        case 'poolcalculator.com':
+                trackId = 'UA-12492022-9';
+        break;
+        case 'spacalculator.com':
+                trackId = 'UA-12492022-10';
+        break;
+  }
+
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', trackId, 'auto');
+  ga('send', 'pageview');
+
+  // adsense secondary analytic code
+  window.google_analytics_uacct = trackId;
+
+</script>
+ -->
+
+<script type="text/javascript">//&lt;![CDATA[ 
+// $(window).load(function(){
+// $(function(){
+//   $("#banner").slideDown(function()  {
+//              $("#banner").fadeIn(100).fadeOut(100).fadeIn(100).fadeOut(100).fadeIn(100);
+//       setTimeout(function() {             
+//         $("#banner").slideUp(); 
+//       }, 8000); //side up after 5 seconds
+//    });
+// }); 
+// });//]]&gt;  
+
+</script>
+</head>
+
+<body onload="DoLoaded();">
+
+<!--    <div id="banner" style="visibility:hidden">
+                <p>Try our ALL NEW Android Application for both phones and tablets:
+                        <a style="display:block; margin:  0.25em 0em 0.25em 0.25em;" href="https://play.google.com/store/apps/details?id=com.psiflow.poolcalculator" onclick="ga('send', 'event', 'android-link-slide-down', 'clicked')">
+                                <img alt="Android app on Google Play" src="images/en_app_rgb_wo_45.png" />
+                        </a>
+                </p> --><!--            <p style="color: red; font-weight: bold;">SPECIAL INTRODUCTORY PRICE: 1/2 off through July 15th!!!!</p> -->
+                
+<div class="pageFrame"><div id="sun"></div>
+<h1>myPoolCalculator<span style="font-size: 24px;"></span></h1>
+
+<div class="contentblock" style="background-color: white;">
+<!-- 
+<span style="float:right"><a style="display:block; margin: 0.25em 0em 0.25em 0.25em;" href="https://play.google.com/store/apps/details?id=com.psiflow.poolcalculator" onclick="ga('send', 'event', 'android-link-top', 'clicked')"><img alt="Android app on Google Play" src="images/en_app_rgb_wo_45.png" /></a> <a style="display:block; margin: 0.25em 0.50em 0.25em 0.25em;" href="http://itunes.apple.com/us/app/pool-calculator/id412876581?mt=8" onclick="ga('send', 'event', 'ios-link-top', 'clicked');"><img border="0" src="images/App_Store_Badge_EN.png" alt="Available on the iPhone App Store" /></a></span>
+ -->
+
+<p>The Pool Calculator takes care of all the math that might come up while you are keeping your swimming pool's water chemistry in balance, telling you exactly how much of each chemical to add. For background on what the various numbers mean, see <a href="chemistry.html">Basic Pool Chemistry</a>.
+</a>.
+</p>
+</div>
+
+<!-- 
+<div class="banner_ad"><script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script> <!~~ The Pool Calculator ~~> <ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-0703638893464633" data-ad-slot="2950095867"></ins> <script type="text/javascript">                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+</div>
+ -->
+
+<!-- 
+<div class="skyscraper_ad"><iframe src="http://rcm-na.amazon-adsystem.com/e/cm?t=poolcalcu-20&amp;o=1&amp;p=21&amp;l=ur1&amp;category=primeent&amp;banner=1R1TYHY9TYF4VF36KGG2&amp;f=ifr" width="0" height="0" scrolling="no" border="0" marginwidth="0" style="border: none; margin: 20px; display: none !important; visibility: hidden !important; opacity: 0 !important; background-position: 125px 125px;" frameborder="0"></iframe> 
+
+<script type="text/javascript">                 amzn_assoc_ad_type = "search"; amzn_assoc_tracking_id = "poolcalcu-20"; amzn_assoc_marketplace = "amazon"; amzn_assoc_region = "US"; amzn_assoc_show_price = "true"; amzn_assoc_show_rating = "false"; amzn_assoc_show_image = "true"; amzn_assoc_width = "160"; amzn_assoc_height =  "600"; amzn_assoc_default_search_key =  "pool chemicals";
+</script>
+                
+<script type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_sw&amp;ServiceVersion=20070822&amp;MarketPlace=US&amp;Operation=GetScript&amp;ID=OneJS&amp;WS=1&amp;source=ac">
+</script>   
+
+
+<script type="text/javascript">                 amzn_assoc_ad_type = "search"; amzn_assoc_tracking_id = "poolcalcu-20"; amzn_assoc_marketplace = "amazon"; amzn_assoc_region = "US"; amzn_assoc_show_price = "true"; amzn_assoc_show_rating = "false"; amzn_assoc_show_image = "true"; amzn_assoc_width = "160"; amzn_assoc_height =  "600"; amzn_assoc_default_search_key =  "pool maintenance";
+</script>
+                
+<script type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_sw&amp;ServiceVersion=20070822&amp;MarketPlace=US&amp;Operation=GetScript&amp;ID=OneJS&amp;WS=1&amp;source=ac">
+</script>
+</div>
+ -->
+
+
+<form method="get" name="F" action="javascript:CalcAll();%20return%20false;"><table style="box-shadow: 0 2px 5px #888;">
+<tbody><tr class="ClassHEAD"><td></td><td align="center">Now </td><td align="center">Target </td><td align="left"><input type="button" value="Calculate" class="sans" onclick="CalcAll(); return false;" /></td><td align="right">Units <select name="Units" onchange="CalcUnits();"><option selected="">U.S.</option><option>Metric</option><option>Imperial</option></select>
+</td>
+</tr><tr class="ClassSIZE"><td align="center">Size </td><td colspan="2" align="center"><nobr><input type="text" name="SIZE" size="6" value="10000" onchange="CalcAll();" /><input type="text" name="SIZEunit" readonly="" size="7" value="gallons" onfocus="GoTo(document.F.FCfrom);" /></nobr></td><td colspan="2" class="ClassSIZE" align="center"><input type="text" name="Status1" size="44" readonly="" class="ClassNORM" /> Mouse over a field for detail </td>
+</tr><tr><td colspan="5"><h3 class="ClassFC">FC <a class="helplink" href="chemistry.html#FC">FC</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td rowspan="2" align="center"></td><td colspan="2" style="height: 100%;"><center>Goal:<div id="FCgoal" style="display: inline;">Not Setup
+</div>
+</center></td><td rowspan="2" colspan="2" align="left">Add <input type="text" name="FC1oz" size="9" value="0" readonly="" onmouseover="StatusBleach(document.F.FC1oz.value);" onfocus="StatusBleach(document.F.FC1oz.value);" /> of <input type="text" name="FCpcnt" size="4" value="6" onchange="CalcFC(); SaveSettings();" />% bleach. Jug size <select name="FCjug" onchange="SaveSettings();"><option>30 oz</option><option>64 oz</option><option selected="">96 oz</option><option>121 oz</option><option>128 oz</option><option>174 oz</option><option>182 oz</option></select>.<br />or add <input type="text" name="FC2oz" size="7" value="0" readonly="" onmouseover="StatusWeight(document.F.FC2oz.value);" onfocus="StatusWeight(document.F.FC2oz.value);" /> by weight or <input type="text" name="FC2vol" size="8" value="0" readonly="" onmouseover="StatusVolume(document.F.FC2vol.value);" onfocus="StatusVolume(document.F.FC2vol.value);" /> by volume of <select name="FCpop" onchange="CalcFC(); SaveSettings();"><option selected="">trichlor</option><option>dichlor</option><option>cal-hypo 48%</option><option>cal-hypo 53%</option><option>cal-hypo 65%</option><option>cal-hypo 73%</option><option>lithium-hypo</option><option>chlorine gas</option></select>.<br /><span class="gray">Note: Dichlor and trichlor add CYA and lower pH. Cal-hypo adds CH.</span>
+</td>
+</tr><tr class="ClassNORM"><td align="center"><input type="text" name="FCfrom" size="4" value="4" onchange="CalcFC();" /></td><td align="center"><input type="text" name="FCto" size="4" value="4" onchange="CalcFC(); SaveSettings();" /></td>
+</tr><tr><td colspan="5"><h3 class="ClassPH">pH <a class="helplink" href="chemistry.html#PH">pH</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td rowspan="2" align="center"></td><td colspan="2" style="height: 100%;"><center>Goal:<div id="PHgoal" style="display: inline;">Not Setup
+</div>
+</center></td><td colspan="2" rowspan="2" align="left">Given TA of <input type="text" name="PHTA" size="4" readonly="" onmouseover="StatusWeight(document.F.PHU1oz.value);" onfocus="StatusWeight(document.F.PHU1oz.value); GoTo(document.F.PHfrom);" /> and Borate of <input type="text" name="PHBOR" size="4" readonly="" />:<br />Add <input type="text" name="PHU1oz" size="7" value="0" readonly="" onmouseover="StatusWeight(document.F.PHU1oz.value);" /> by weight or <input type="text" name="PHU1vol" size="7" value="0" readonly="" onmouseover="StatusVolume(document.F.PHU1vol.value);" onfocus="StatusVolume(document.F.PHU1vol.value);" /> by volume of washing soda or soda ash<br />or add <input type="text" name="PHU2oz" size="7" value="0" readonly="" onmouseover="StatusBorax(document.F.PHU2oz.value);" onfocus="StatusBorax(document.F.PHU2oz.value);" /> by weight or <input type="text" name="PHU2vol" size="8" value="0" readonly="" onmouseover="StatusVolume(document.F.PHU2vol.value);" onfocus="StatusVolume(document.F.PHU2vol.value);" /> by volume of borax.<br />Add <input type="text" name="PHD1oz" size="7" value="0" readonly="" onmouseover="StatusVolume(document.F.PHD1oz.value);" onfocus="StatusVolume(document.F.PHD1oz.value);" /> of <select name="MApop" onchange="CalcPH(); SaveSettings();"><option>15.7% - 10° Baumé</option><option>28.3% - 18° Baumé</option><option selected="">31.45% - 20° Baumé</option><option>34.6% - 22° Baumé</option><option>14.5%</option><option>29%</option></select> muriatic acid<br />or add <input type="text" name="PHD2oz" size="8" value="0" readonly="" onmouseover="StatusWeight(document.F.PHD2oz.value);" onfocus="StatusWeight(document.F.PHD2oz.value);" /> by weight or <input type="text" name="PHD2vol" size="7" value="0" readonly="" onmouseover="StatusVolume(document.F.PHD2vol.value);" onfocus="StatusVolume(document.F.PHD2vol.value);" /> by volume of dry acid.<br /><span class="gray">Note: pH calculations depend on TA and Borate. Results are approximate and can be off significantly for large pH changes. Changing your pH will also change your TA.</span>
+</td>
+</tr><tr class="ClassNORM"><td align="center"><input type="text" name="PHfrom" size="4" value="7.6" onchange="CalcPH(); CalcCSIfrom();" /></td><td align="center"><input type="text" name="PHto" size="4" value="7.6" onchange="CalcPH(); CalcCSIto();" /></td>
+</tr><tr><td colspan="5"><h3 class="ClassTA">TA <a class="helplink" href="chemistry.html#TA">TA</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td rowspan="2" align="center"></td><td colspan="2" style="height: 100%;"><center>Goal:<div id="TAgoal" style="display: inline;">Not Setup
+</div>
+</center></td><td colspan="2" rowspan="2" align="left">Add <input type="text" name="TAoz" size="7" value="0" readonly="" class="ClassNORM" onmouseover="StatusWeight(document.F.TAoz.value);" onfocus="StatusWeight(document.F.TAoz.value); GoTo(document.F.TAfrom);" /> by weight or <input type="text" name="TAvol" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.TAvol.value);" onfocus="StatusVolume(document.F.TAvol.value);" /> by volume of baking soda.<br />To lower TA you reduce pH to 7.0-7.2 with acid and then aerate to increase pH.<br /><span class="gray">Note: Adding baking soda will also raise your pH.</span>
+</td>
+</tr><tr class="ClassNORM"><td align="center"><input type="text" name="TAfrom" size="4" value="80" onchange="CalcTA(); CalcPH(); CalcCSIfrom();" /></td><td align="center"><input type="text" name="TAto" size="4" value="80" onchange="CalcTA(); CalcCSIto();" /></td>
+</tr><tr><td colspan="5"><h3 class="ClassCH">CH <a class="helplink" href="chemistry.html#CH">CH</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td rowspan="2" align="center"></td><td colspan="2" style="height: 100%;"><center>Goal:<div id="CHgoal" style="display: inline;">Not Setup
+</div>
+</center></td><td colspan="2" rowspan="2" align="left">Add <input type="text" name="CH1oz" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusWeight(document.F.CH1oz.value);" onfocus="StatusWeight(document.F.CH1oz.value); GoTo(document.F.CHfrom);" /> by weight or <input type="text" name="CH1vol" size="9" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.CH1vol.value);" onfocus="StatusVolume(document.F.CH1vol.value);" /> by volume of calcium chloride<br />or add <input type="text" name="CH2oz" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusWeight(document.F.CH2oz.value);" onfocus="StatusWeight(document.F.CH1oz.value);" /> by weight or <input type="text" name="CH2vol" size="9" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.CH2vol.value);" onfocus="StatusVolume(document.F.CH2vol.value);" /> by volume of calcium chloride dihydrate.<br />To lower CH you replace <input type="text" name="CHpcnt" size="5" value="some" readonly="" class="ClassNORM" onmouseover="StatusPcnt(document.F.CHpcnt.value);" onfocus="StatusPcnt(document.F.CHpcnt.value);" /> of the water with new water, with CH of <input type="text" name="CHfill" size="4" value="0" onchange="CalcCH(); SaveSettings();" />. </td>
+</tr><tr class="ClassNORM"><td align="center"><input type="text" name="CHfrom" size="4" value="300" onchange="CalcCH(); CalcCSIfrom();" /></td><td align="center"><input type="text" name="CHto" size="4" value="300" onchange="CalcCH(); CalcCSIto();" /></td>
+</tr><tr><td colspan="5"><h3 class="ClassCYA">CYA <a class="helplink" href="chemistry.html#CYA">CYA</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td rowspan="2" align="center"></td><td colspan="2" style="height: 100%;"><center>Goal:<div id="CYAgoal" style="display: inline;">Not Setup
+</div>
+</center></td><td colspan="2" rowspan="2" align="left">Add <input type="text" name="CYA1oz" size="7" value="0" readonly="" class="ClassNORM" onmouseover="StatusWeight(document.F.CYA1oz.value);" onfocus="StatusWeight(document.F.CYA1oz.value); GoTo(document.F.CYAfrom);" /> by weight or <input type="text" name="CYA1vol" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.CYA1vol.value);" onfocus="StatusVolume(document.F.CYA1vol.value);" /> by volume of stabilizer<br />or add <input type="text" name="CYA2oz" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.CYA2oz.value);" onfocus="StatusVolume(document.F.CYA2oz.value);" /> of liquid stabilizer.<br />To lower CYA you replace <input type="text" name="CYApcnt" size="5" value="some" readonly="" class="ClassNORM" onmouseover="StatusPcnt(document.F.CYApcnt.value);" onfocus="StatusPcnt(document.F.CYApcnt.value);" /> of the water with new water.<br /><span class="gray">Note: It can take solid stabilizer up to a week to dissolve. It will also lower your pH.</span>
+</td>
+</tr><tr class="ClassNORM"><td align="center"><input type="text" name="CYAfrom" size="4" value="40" onchange="CalcCYA(); CalcCSIfrom(); CalcSUG();" /></td><td align="center"><input type="text" name="CYAto" size="4" value="40" onchange="CalcCYA(); CalcCSIto();" /></td>
+</tr><tr><td colspan="5"><h3 class="ClassSALT">Salt <a class="helplink" href="chemistry.html#Salt">Salt</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td align="center"></td><td align="center"><input type="text" name="SALTfrom" size="5" value="0" onchange="CalcSALT(); CalcCSIfrom();" /></td><td align="center"><input type="text" name="SALTto" size="5" value="0" onchange="CalcSALT(); CalcCSIto();" /></td><td colspan="2" align="left">Add <input type="text" name="SALTlb" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusBags(document.F.SALTlb.value);" onfocus="StatusBags(document.F.SALTlb.value); GoTo(document.F.BORfrom);" /> of salt.<br />To lower Salt you replace <input type="text" name="SALTpcnt" size="5" value="some" readonly="" class="ClassNORM" onmouseover="StatusPcnt(document.F.SALTpcnt.value);" onfocus="StatusPcnt(document.F.SALTpcnt.value);" /> of the water with new water. </td>
+</tr><tr><td colspan="5"><h3 class="ClassBOR">Borate <a class="helplink" href="chemistry.html#Borate">Borate</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td align="center"></td><td align="center"><input type="text" name="BORfrom" size="4" value="50" onchange="CalcBOR(); CalcPH(); CalcCSIfrom();" /></td><td align="center"><input type="text" name="BORto" size="4" value="50" onchange="CalcBOR(); CalcCSIto();" /></td><td colspan="2" align="left">Add <input type="text" name="BORoz" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusBorax(document.F.BORoz.value);" onfocus="StatusBorax(document.F.BORoz.value); GoTo(document.F.TEMP);" /> by weight or <input type="text" name="BORvol" size="9" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.BORvol.value);" onfocus="StatusVolume(document.F.BORvol.value);" /> by volume of <select name="BORpop" onchange="CalcBOR(); SaveSettings();"><option selected="">borax</option><option>boric acid</option><option>tetraborate pentahydrate</option></select><br />and <input type="text" name="BORacid" size="8" value="0" readonly="" class="ClassNORM" onmouseover="StatusVolume(document.F.BORacid.value);" onfocus="StatusVolume(document.F.BORacid.value);" /> of 31.45% muriatic acid to compensate for the pH increase.<br />To lower Borate you replace <input type="text" name="BORpcnt" size="5" value="some" readonly="" class="ClassNORM" onmouseover="StatusPcnt(document.F.BORpcnt.value);" onfocus="StatusPcnt(document.F.BORpcnt.value);" /> of the water with new water.<br /><span class="gray">Note: The pH should be tested and adjusted as needed after increasing the borate level.</span>
+</td>
+</tr><tr><td colspan="5"><h3 class="ClassTEMP">Temp
+</h3></td>
+</tr><tr class="ClassNORM"><td align="center">Temp </td><td colspan="2" align="center"><nobr><input type="text" name="TEMP" size="3" value="84" onchange="CalcCSIfrom(); CalcCSIto();" /><input type="text" name="TEMPunit" size="10" readonly="" value="Fahrenheit" class="ClassNORM" onfocus="GoTo(document.F.SZwid);" /></nobr></td><td colspan="2" class="ClassNORM" align="center"><input type="text" name="Status2" size="44" readonly="" class="ClassNORM" /> Mouse over a field for detail </td>
+</tr><tr><td colspan="5"><h3 class="ClassCSI">CSI <a class="helplink" href="chemistry.html#CSI">CSI</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td align="center"></td><td align="center"><input type="text" name="CSIfrom" size="5" value="0" readonly="" class="ClassNORM" onmouseover="StatusCSI(document.F.CSIfrom.value);" onfocus="StatusCSI(document.F.CSIfrom.value);" /></td><td align="center"><input type="text" name="CSIto" size="5" value="0" readonly="" class="ClassNORM" onmouseover="StatusCSI(document.F.CSIto.value);" onfocus="StatusCSI(document.F.CSIto.value);" /></td><td colspan="2" align="left">Calcite Saturation Index - requires pH, TA, CH, CYA, Temp, uses Borate, Salt<br />Less than -0.6 is suggestive of problems for plaster, tile, stone, and pebble pools.<br />Greater than 0.6 is suggestive of problems for all pools. </td>
+</tr><tr><td colspan="5"><h3 class="ClassSUG">Suggested FC Levels <a class="helplink" href="chemistry.html#SUG">Suggested FC Levels</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td colspan="3" align="center"></td><td colspan="2" align="left"><nobr>SWG:<input type="text" name="SUGFCswg" size="2" value="2" readonly="" class="ClassNORM" onmouseover="StatusSUG('SWG',document.F.SUGFCswg.value);" onfocus="StatusSUG('SWG',document.F.SUGFCswg.value);" /></nobr> <nobr>Normal:<input type="text" name="SUGFCmin" size="2" value="3" readonly="" class="ClassNORM" onmouseover="StatusSUG('Minimum',document.F.SUGFCmin.value);" onfocus="StatusSUG('Minimum',document.F.SUGFCmin.value);" /> to <input type="text" name="SUGFCtarg" size="2" value="6" readonly="" class="ClassNORM" onmouseover="StatusSUG('Maximum',document.F.SUGFCtarg.value);" onfocus="StatusSUG('Maximum',document.F.SUGFCtarg.value);" /></nobr> <nobr>Shock:<input type="text" name="SUGFCshock" size="2" value="15" readonly="" class="ClassNORM" onmouseover="StatusSUG('Shock',document.F.SUGFCshock.value);" onfocus="StatusSUG('Shock',document.F.SUGFCshock.value);" /></nobr> <nobr>Mustard Algae Shock:<input type="text" name="SUGFCmust" size="2" value="24" readonly="" class="ClassNORM" onmouseover="StatusSUG('Mustard Algae Shock',document.F.SUGFCmust.value);" onfocus="StatusSUG('Mustard Algae Shock',document.F.SUGFCmust.value);" /></nobr><br /><span class="gray">Suggested target FC levels based on the current CYA level for outdoor pools.<br />Note: Be careful if your CYA is really and truly zero!</span>
+</td>
+</tr><tr><td colspan="5"><h3 class="ClassGOALS">Suggested Goal Levels <a class="helplink" href="chemistry.html#GOALS">Suggested Goal Levels</a>
+</h3></td>
+</tr><tr class="ClassNORM"><td colspan="3" align="center"></td><td colspan="2" align="left">Use suggested goal levels from: <select name="FROMpop" onchange="CalcGOAL(); SaveSettings();"><option selected="">Not Setup</option><option>Traditional Pool</option><option>TroubleFreePool.com</option><option>Traditional Spa</option></select><br />Primary source of chlorine: <select name="CHLORINEpop" onchange="CalcSUG(); CalcGOAL(); SaveSettings();"><option selected="">Not Setup</option><option>Bleach</option><option>SWG</option><option>Trichlor</option></select> Pool surface: <select name="SURFACEpop" onchange="CalcGOAL(); SaveSettings();"><option selected="">Not Setup</option><option>Plaster</option><option>Vinyl</option><option>Fiberglass</option></select><br /><span class="gray">Note: Suggested goals are simply a starting point. There are many situations that are not covered by these basic guidelines.</span>
+</td>
+</tr></tbody></table><div class="contentblock"><span class="title">Notes</span><p>Unless you are shocking your pool, it is always best to add less than the full amount, wait a little while to allow the addition to mix thoroughly, and then retest to see where you are. Also, keep in mind that the volume of powders can vary from manufacturer to manufacturer.
+</p></div><div class="contentblock"><span class="title">Estimating pool volume</span><p>A <input type="text" name="SZwid" size="3" value="0" onchange="CalcSZ();" /> <input type="text" name="SZunit1" size="2" value="ft" readonly="" onfocus="GoTo((document.F.SZpop.selectedIndex==2)?document.F.SZdeep:document.F.SZlen);" /> wide by <input type="text" name="SZlen" size="3" value="0" onchange="CalcSZ();" style="color: rgb(0, 0, 0);" /> <input type="text" name="SZunit2" size="2" value="ft" readonly="" onfocus="GoTo(document.F.SZdeep);" style="color: rgb(0, 0, 0);" /> long by <input type="text" name="SZdeep" size="3" value="0" onchange="CalcSZ();" /> <input type="text" name="SZunit3" size="2" value="ft" readonly="" onfocus="GoTo(document.F.SZvol);" /> deep <select name="SZpop" onchange="CalcSZ();"><option selected="">rectangular</option><option>oval</option><option>round (ignores length)</option></select> pool holds <input type="text" name="SZvol" size="14" value="0" readonly="" />.<br />If the depth varies, use the average depth of the pool. A good approximation is the shallow end depth plus the deep end depth divided by two. Irregularly shaped pools can be approximated by estimating the average length and width and using rectangular.
+</p></div>
+
+<div class="contentblock"><span class="title">Effects of adding chemicals</span><p>Adding <input type="text" name="EFFoz" size="6" value="0" onchange="CalcEFF();" onmouseover="StatusEFF();" /> <input type="text" name="EFFunit" size="3" value="oz" readonly="" /> of <select name="EFFpop" onchange="CalcEFF();"><option>5.25% bleach</option><option selected="">6% bleach</option><option>8.25% bleach</option><option>10% bleach</option><option>12.5% bleach</option><option>trichlor</option><option>dichlor</option><option>48% cal-hypo</option><option>53% cal-hypo</option><option>65% cal-hypo</option><option>73% cal-hypo</option><option>lithium hypochlorite</option><option>chlorine gas</option><option>15.7% muriatic acid</option><option>31.45% muriatic acid</option><option>dry acid</option><option>washing soda or soda ash</option><option>borax (20 Mule Team)</option><option>sodium tetraborate pentahydrate</option><option>boric acid</option><option>caustic soda (lye)</option><option>baking soda</option><option>calcium chloride</option><option>calcium chloride dihydrate</option><option>stabilizer</option><option>liquid stabilizer</option><option>salt</option></select> will <input type="text" name="EFFresult" size="80" onfocus="GoTo(document.F.SIZE);" readonly="" /> <span class="gray">Note: pH calculations are not exact. These numbers are only suggestive of the relative magnitude of the pH change you can expect. Small changes, +-0.4, with pH between 7.2-7.8, TA around 80-120, and Borate near zero will be approximately correct. The further you go from those ranges the less these pH changes will correspond to reality.</span>
+</p></div>
+
+</form>
+<div class="contentblock" style="background-color: white;">
+<!-- 
+<span style="float:right"><a style="display:block; margin: 0.25em 0em 0.25em 0.25em;" href="https://play.google.com/store/apps/details?id=com.psiflow.poolcalculator" onclick="ga('send', 'event', 'android-link-bottom', 'clicked')"><img alt="Android app on Google Play" src="images/en_app_rgb_wo_45.png" /></a> <a style="display:block; margin: 0.25em 0.15em 0.25em 0.25em;" href="http://itunes.apple.com/us/app/pool-calculator/id412876581?mt=8" onclick="ga('send', 'event', 'ios-link-bottom', 'clicked');"><img border="0" src="images/App_Store_Badge_EN.png" alt="Available on the iPhone App Store" /></a></span>
+ -->
+
+<p>If you have comments or questions about The Pool Calculator please write to <a href="mailto:poolcalculator@psiflow.com">poolcalculator@psiflow.com</a>. For help with your pool try <a href="http://www.troublefreepool.com/">Trouble Free Pool</a>, a swimming pool and spa care forum.
+</p>
+</div>
+
+<!-- 
+<div class="banner_ad">
+<script async="" src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js" type="text/javascript"></script> 
+
+<!~~ The Pool Calculator ~~> 
+
+<ins class="adsbygoogle" style="display:inline-block;width:728px;height:90px" data-ad-client="ca-pub-0703638893464633" data-ad-slot="2950095867"></ins> 
+
+<script type="text/javascript">                (adsbygoogle = window.adsbygoogle || []).push({});
+                </script>
+</div>
+ -->
+
+</div>
+
+<!-- Copyright © 2010-2015 pSIFlow Technology Inc. -->
+
+</body></html>
